@@ -2,9 +2,30 @@
     text-align: center;
 
 }
-#main-content {
+.secondari {
     margin: 0 auto;
-    width: 800px;
+    width: 850px;
+}
+
+#logo-area img{
+    width: 180px;
+}
+
+.principale {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.rounded-corner {
+    border-radius: 10PX;
+}
+
+ul li {
+    margin: 10px;
 }
 
 .hr-header {
@@ -19,24 +40,41 @@
     padding: 15px;  
 }
 
+.titolo b {
+    text-transform: uppercase;
+}
+
 .autore {
     margin: 0 auto;
-    margin-left: auto;
     color: rgba(183,183,183,255);
+    text-align: center;
+      
 }
 
 .hr-barra {
-    margin: 0;
+    margin: 20;
     border-top-width: 1px;
-    color: #c4f3f2;
+    color: #30a3a1;
+    
 }
 
 .link-testo {
    color: rgba(181,70,15,255);
+   border-left: 10px;
+   border-color: orange;
+   margin-bottom: 80px;
    
     
 }
 
 .link {
     color: rgba(16,119,119,255); 
+}
+
+/* modifiche gen */
+img{
+    max-width: 100%;
+}
+figure{
+    margin: 0;
 }
