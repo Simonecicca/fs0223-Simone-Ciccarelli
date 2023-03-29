@@ -1,7 +1,10 @@
-.container {
-     display: flex;
-     justify-content: center;
-     
+#main-header {
+    text-align: center;
+
+}
+#main-content {
+    margin: 0 auto;
+    width: 800px;
 }
 
 .hr-header {
