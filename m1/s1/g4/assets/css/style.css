@@ -1,0 +1,102 @@
+/* IMPOSTAZIONI GENERALI */
+#main-image {
+    background-attachment: fixed;
+    background-image: url(../img/sfondo.png);
+
+}
+
+/* HEADER */
+#main-header {
+    background-color: rgba(0,136,164,255);
+    margin: 20px;
+    padding: 40px;
+    background: linear-gradient(356deg, rgb(7 88 104), #15c5e9);
+    box-shadow: 0px 10px 15px 0px #000;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container {
+    text-align: center;
+
+}
+
+.main-title {
+    
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-list {
+    
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: white;
+}
+
+.li-nav {
+    margin-bottom: 10px;
+}
+/* MAIN */
+
+#main-back {
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    box-shadow: 0px 10px 15px 0px #000;
+    font-family: Poppins; 
+}
+
+.title-due {
+   font-size: 2rem; 
+   font-weight: bold;
+   line-height: 1.5em;
+   margin-bottom: 15px;
+   text-align: initial;
+}
+
+.sub-t {
+    color: rgba(164,158,165,255);
+    text-align: initial;
+}
+
+.testo {
+    margin-top: 20px;
+    text-align: initial;
+    margin-bottom: 20px;
+    
+}
+
+.testo b {
+    color: purple;
+    font-weight: bold;
+
+}
+
+.paragrafo {
+    margin-bottom: 15px;
+    text-align: initial;
+}
+
+.list-two {
+    text-align: initial;
+}
+
+.list-two b {
+    background-color: rgba(212,212,213,255);
+    line-height: 2em;
+    background
+}
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
