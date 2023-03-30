@@ -70,7 +70,7 @@
 }
 
 .testo b {
-    color: purple;
+    color: rgba(166,38,112,255);
     font-weight: bold;
 
 }
@@ -87,13 +87,60 @@
 .list-two b {
     background-color: rgba(212,212,213,255);
     line-height: 2em;
-    background
+    border-radius: 5px;
+    border: .5px solid grey;
+}
+
+.testo-two {
+    text-align: initial;
+    margin-top: 20px;
+   
+}
+
+.testo-two b {
+    color:rgba(166,38,112,255);
+    font-weight: bold;
+}
+
+.list-three {
+    margin-top: 20px;
+    line-height: 1,5em;
+    padding: 2px;
+
+}
+
+.testo-three {
+    margin-top: 20px;
+    text-align: initial;
 }
 
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
+
+.table {
+    width: 100%;
+}
+
+.caption {
+    font-weight: bold;
+    font-size: 1em;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.table-head {
+    background-color: rgba(52,104,211,255);
+    line-height: 1.5em;
+    color: white
+    
+}
+
+.table-body {
+    line-height: 2em;
+}
+
 
 /* FORM */
 
