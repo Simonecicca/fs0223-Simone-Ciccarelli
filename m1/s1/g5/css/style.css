@@ -1,0 +1,148 @@
+/* Your styles here */
+
+.body {
+    font-family: 'Open Sans', sans-serif;
+    color: #393d41;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    
+    
+}
+
+.container {
+    text-align: center;
+}
+
+#header {
+    background-color: black;
+    padding: 30px 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.button {
+    background-color: #f04c2f;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    margin: 30px;
+    text-transform: uppercase;
+    border: 0;
+    
+}
+
+.main {
+    padding-bottom: 80px;
+}
+
+.main-div {
+    background-image: url(../images/banner.jpg);
+    padding-top: 40px;
+    background-size: cover;
+    max-width: 100%;
+
+}
+
+p {
+    padding: 0 80px;
+}
+
+.main-div h1 {
+    line-height: 1;
+    font-size: 3rem;
+    padding: 40px 40px;
+}
+
+h1 , h3 {
+    color: #25a2c3;
+}
+
+h1 , h2 , h3 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.section {
+    padding-top: 60px;
+}
+
+.cit {
+    background-color: #e22d0e;
+    
+    
+}
+
+.cit p  {
+    color: white;
+    padding: 40px 20px;
+    font-style: italic;
+}
+
+.images {
+    width: 100%;
+             
+}
+
+.div-all {
+    padding: 20px;
+}
+
+.div-border {
+    border: 1px solid;
+    border-color: #dee1e3;
+    border-radius: 0 0 2% 2%;
+}
+
+.div-par {
+    padding-bottom: 80px;
+
+}
+
+
+b {
+    font-size: 15px;
+}
+
+/* immagine rotonda */
+.round {
+    border-radius: 100%;
+    padding-top: 20px;
+}
+
+ /* con i bordi ho avuto un problema che non sono riuscito a risolbere */
+
+
+.footer {
+    background-color: #25a2c3;
+    color: #c8e7f0;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.65;
+}
+
+.footer-h {
+    padding-bottom: 20px;
+}
+
+.ul {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.footer-p {
+    padding-top: 30px;
+}
+
+.link {
+    color:#c8e7f0;
+}
