@@ -1,0 +1,145 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    background-color: rgba(34,47,63,255);
+    
+}
+
+.immagine-logo {
+    width: 180px;
+    margin: 20px
+}
+
+.div-ul {
+   background-color: rgba(54,71,87,255); 
+}
+
+#main {
+    margin: 20px;
+}
+
+.lista {
+    display: inline-block;
+    font-size: 20px;
+    margin: 8px;
+    color:white
+    
+}
+
+#main {
+    background-color: rgba(233,237,238,255);
+}
+
+.div-titolo {
+    background-color: rgba(245,102,0,255); 
+}
+
+.titolo-one {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.first-background {
+    background-image: url(../assets/bg-image.png);
+    background-size: cover;
+    margin: 20px 0;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 60px;
+}
+
+.under-title {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.titolo-two {
+    display: inline-block;
+    font-size: 1em;
+}
+
+.container {
+    background-color: white;
+    display: inline-block;
+    
+    
+}
+
+#immagini-container {
+    background-color: white;
+    
+}
+
+#imm1 {
+    background-image: url(../assets/img_1.jpg);
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+#imm2 {
+    background-image: url(../assets/img_2.jpg);
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+#imm3 {
+    background-image: url(../assets/img_3.jpg);
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    border-radius: 30px;
+    
+}
+
+#imm4 {
+    background-image: url(../assets/img_4.jpg);
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    border-radius: 30px;
+    
+}
+
+.second-background {
+    background-image: url(../assets/img_9.png);
+    height: 600px;
+    background-size: cover;
+    max-width: 100%;
+    margin-top: 20px;
+    
+}
+
+.titolo-three {
+    display: inline-block;
+    font-size: 1em;
+    
+}
+
+.div-titolo-three {
+    text-align: center;
+}
+
+.third-background {
+    background-image: url(../assets/img_10.png);
+    height: 600px;
+    background-size: cover;
+    max-width: 100%;
+    margin-top: 20px;
+}
