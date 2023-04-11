@@ -19,7 +19,7 @@ function area(l1,l2) {
     return  l1*l2
 }
 
-console.log (calcolo)
+console.log (calcolo);
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -37,7 +37,7 @@ function crazySum(first,first2) {
     else return (first+first2)*3
 }
     
-console.log(numeri)
+console.log(numeri);
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
@@ -54,7 +54,7 @@ function crazyDiff(diff) {
     else return (diff-19)*3
 }
 
-console.log(diff)
+console.log(diff);
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -71,7 +71,7 @@ function boundary(n) {
     else return false
 }
 
-console.log (n)
+console.log (n);
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -91,7 +91,7 @@ function epify(str2) {
     
 }
 
-console.log (str2)
+console.log (str2);
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -111,7 +111,7 @@ function check3and7(numero) {
 
 }
 
-console.log(numero)
+console.log(numero);
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
@@ -126,7 +126,7 @@ function reverseString(str3) {
 
 }
 
-console.log(str3)
+console.log(str3);
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
@@ -138,10 +138,20 @@ console.log(str3)
 let str4 = upperFirst("il sole sorge ad est e tramonta ad ovest!")
 
 function upperFirst(str4) {
-    
-}
+    let wordsArray = str4.split(" ");
+    let capitalizedWords = [];
+    for (let word of wordsArray) {
 
-console.log(str4)
+        let firstLetter = word[0].toUpperCase();
+        console.log(firstLetter);
+        word = firstLetter + word.slice(1);
+        console.log(word);
+        capitalizedWords.push(word)
+    }
+    
+    return capitalizedWords.join(" ");
+
+}
 
 
 
@@ -162,7 +172,7 @@ function cutString(str5) {
 
 }
 
-console.log(str5)
+console.log(str5);
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
