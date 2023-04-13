@@ -97,20 +97,36 @@
         */
   
       const makeItClickable = function () {
-        let h1 = document.querySelector('h1')
+        let h1 = document.querySelector('h1');
+        let testoArr = h1.innerText.split('');
+
+
+        testoArr.pop();
+
+        let nuovoTesto = testoArr.join('');
+        h1.textContent = nuovoTesto;
+
+        
+        document.querySelector('h1')
+        .addEventListener('click', makeItClickable);
         
       }
-  
-        makeItClickable()
 
       /* ESERCIZIO 10
          Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
         */
   
       const revealFooterLink = function () {
+
+        let url = footer.querySelector('a').href;
+
+        alert(url);
   
   
       }
+
+      document.querySelector('footer')
+        .addEventListener('click', revealFooterLink);
   
       /* ESERCIZIO 11
          Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
@@ -118,10 +134,35 @@
       */
   
       const generateTable = function () {
-  
+        let target = document.querySelector('#tableArea');
+
+        let tabella = document.createElement('table');
+        let thead = document.createElement('thead');
+        let tr = document.createElement('tr');
+
+        thead.append(primaTr);
+        tabella.append(thead);
+        target.append(tabella);
+
+        let colonne = ['immagine', 'nome prodotto', 'quantità', 'prezzo'];
+
+        for (let colonna of colonne) {
+          let th = document.createElement('th');
+          th.textContent = colonna;
+          primaTr.append(th);
+        }
+
+        let dati = [
+        {
+          immagine: 'urlimmagine',
+          nome_prodotto: 'bottiglia',
+          quantità: '1000',
+          prezzo: '50'
+        }]
   
       }
-  
+      
+      generateTable();
       /* ESERCIZIO 12
          Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
       */
