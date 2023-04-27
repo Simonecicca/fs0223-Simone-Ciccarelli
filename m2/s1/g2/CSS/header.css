@@ -28,8 +28,10 @@
 
 .div-logo {
     display: flex;
-    
-    
+      
+}
 
+.div-logo li {
+    justify-content: center;
 }
 

@@ -1,0 +1,55 @@
+.box {
+    width: 250px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+    flex-direction: column;
+    line-height: 60px;
+    margin: 40px;
+    background: linear-gradient(355deg, #00000033, transparent);
+    transition: all 800ms;
+    
+    
+}
+
+.lavagna {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #666666;
+    
+}
+
+.box h2 {
+    font-weight: bold;
+}
+
+.box-1 {
+    background-color:#f9fac8;
+    transform: rotate(-10deg);
+}
+
+.box-2 {
+    background-color: #c8fbca;
+    transform: rotate(18deg);
+}
+
+.box-3 {
+    background-color: #c8c8f6;
+    transform: rotate(-15deg);
+}
+
+.box span {
+    font-size: 20px;
+    
+}
+ 
+.box:hover {
+    scale: 1.2;
+    box-shadow: 8px 8px 12px 0;
+    transition: all 2s;
+    transform: rotate(90deg);
+}
