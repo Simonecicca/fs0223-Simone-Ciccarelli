@@ -78,6 +78,7 @@
 .container {
     padding: 60px 200px;
     border-bottom: 1px solid grey;
+
        
 }
 
@@ -154,6 +155,8 @@
 .div-secondario {
     display: flex;
     justify-content: space-between;
+    width: 750px;
+    margin-bottom: 50px;
 }
 
 .part-2 {
