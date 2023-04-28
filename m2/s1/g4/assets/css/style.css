@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital@1&display=swap');
+
+#header {
+    background-color: #ffc017;
+}
+
+#nav {
+    display: flex;
+    border-bottom: 3px solid black;
+    justify-content: space-around;
+    padding: 20px 20px;
+    
+
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#nav ul li {
+    margin: 0 20px;
+}
+
+#nav ul li:nth-child(5) {
+    background-color: #191919;
+    display: flex;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 50px;
+}
+
+.div-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+    border-bottom: 1px solid black;
+    padding-left: 200px;
+    
+    
+}
+
+.div-header h1 {
+    font-size: 75px;
+    padding-bottom: 25px;
+}
+
+.div-header p {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.div-header button {
+    background-color: #191919;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.trending {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.trending p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.container {
+    padding: 60px 200px;
+    border-bottom: 1px solid grey;
+       
+}
+
+.article {
+    margin: 20px 6px;
+}
+
+.span-in {
+    color: grey;
+}
+
+.div-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+    margin-bottom: 10px;
+       
+}
+
+
+.main-section-div {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.main-section-div p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.main-section-div img {
+    border-radius: 100%;
+    width: 20px;
+}
+
+.second-section-div h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.second-section-div span {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+
+.second-section-div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 34px;
+    
+}
+
+.div-numero {
+    font-size: 1.5rem;
+    color: #e7e7e7;
+    font-weight: bold;
+}
+
