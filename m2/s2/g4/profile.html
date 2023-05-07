@@ -17,10 +17,15 @@
             width: 150px;
         }
 
-        .container {
-            
+        .title {
+            font-size: 25px;
         }
 
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 100px;
+        }
     </style>
   </head>
   <body class="bg-dark text-light">
@@ -64,7 +69,7 @@
 <div>
     Maturity Settings:
 </div>
-<button class="Maturity border-1 bg-dark text-light p-1 px-2 my-3">
+<button class="Maturity border-1 bg-dark text-light p-1 px-2 my-3 fw-bold">
     ALL MATURITY RATINGS
 </button>    
 <div style="font-size: 13;">
@@ -72,28 +77,30 @@
 </div>
 <button type="button" class="b-spacing btn btn-outline-secondary rounded-0 px-4 mt-4">
     EDIT
-</button>           
+</button>  
+<hr class="my-4">
+
+<div class="title">
+    Autoplay controls
+</div>
+<div class="checkbox-info my-2 d-flex align-items-center">
+    <input type="checkbox" name="" id=""> <span class="ms-2"> Autoplay next episode in a series on all devices.</span>
+</div>
+<div class="checkbox-info my-2 d-flex align-items-center">
+    <input type="checkbox" name="" id=""> <span class="ms-2"> Autoplay previews while browsing on all devices.</span>
+</div>
+</div>
+<hr>
+<div class="d-flex justify-content-center p-0 mt-2">
+<button type="button" class="btn btn-light fw-bold b-spacing rounded-0 py-1 px-3 me-4">SAVE</button>
+<button type="button" class="btn btn-outline-secondary rounded-0 px-3 py-1 b-spacing me-4">SECONDARY</button>
+<button type="button" class="btn btn-outline-secondary rounded-0 px-3 py-1 b-spacing me-4">DELETE PROFILE</button>
+</div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>  
-
-    </main>
+    </div>  
+</main>
     
 
 
