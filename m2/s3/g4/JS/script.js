@@ -2,7 +2,7 @@ let card = document.getElementsByClassName('card')
 
 fetch('https://api.pexels.com/v1/search?query=Nature', {
     headers: {
-      Authorization: 'LJPG30hSUDtKBI5JESCA24GdRtKJ4X7wqPuCSY1hBPzFxDRVPT11IoWI'
+      Authorization: 'o3Lg8yEHkC1OwIuPtnjRQQApWpEFNUlU6dgZhRNMjb5RONC5hRILOAtY'
     }})
 
     .then((res) => {
@@ -27,8 +27,9 @@ fetch('https://api.pexels.com/v1/search?query=Nature', {
             newImg.src = element.src.nature;
             card[i].prepend(newImg);
             
-        })
+        
         });
+        })
     })
 
     fetch('https://api.pexels.com/v1/search?query=Sky', {
