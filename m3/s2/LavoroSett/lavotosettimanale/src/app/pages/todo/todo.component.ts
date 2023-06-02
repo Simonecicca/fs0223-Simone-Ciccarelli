@@ -21,8 +21,13 @@ export class TodoComponent implements OnInit {
   getTodo():void {
     this.todoSvc.getTodo().then(todoRes => {
       this.todo = todoRes;
-      this.loading = true;
+      this.loading = false;
+
     })
+  }
+
+  addTodo(aggiungi:Todo) {
+    this.todoSvc.addTodo(aggiungi).then(todoRes => {todoRes.completed = !todoRes.completed} );
   }
 
 }

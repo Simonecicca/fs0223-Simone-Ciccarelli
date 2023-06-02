@@ -7,7 +7,7 @@ import { Todo } from './todo';
 export class TodoService {
   [x: string]: any;
 
-  apiUrl: string = 'http://localhost:4200/todo';
+  apiUrl: string = 'http://localhost3000/todo';
   allTodo: Todo[] = [];
 
   constructor() { }
@@ -16,11 +16,11 @@ export class TodoService {
     return fetch(this.apiUrl).then(response => response.json());
   }
 
-  addTodos(goal:Todo):Promise<Todo>{
+  addTodo(todo:Todo){
     return fetch(this.apiUrl,{
       method:'post',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(goal)
+      body: JSON.stringify(todo)
     }).then(response => response.json());
   }
 

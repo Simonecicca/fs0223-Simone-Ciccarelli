@@ -1,9 +1,16 @@
+<div class="not-found" *ngIf="todo.length == 0 && !loading">
+No Todo found
+</div>
+
+<div *ngIf="!loading">
 <ul *ngFor="let todo of todo">
   <li>{{todo.title}}</li>
+  <button class="check-button">✓</button>
 </ul>
 
 <div class="todo-container">
 <p>Create new ToDo</p>
-<input class="input" type="text" placeholder="New ToDo">
-<button class="button">+ Add</button>
+<input name="input-name" [(ngModel)] = "itodo.title" class="input" type="text" placeholder="New ToDo">
+<button class="button"  (click)="addTodo()">+ Add</button>
+</div>
 </div>
