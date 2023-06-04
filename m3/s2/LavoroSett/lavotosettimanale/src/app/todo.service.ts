@@ -1,22 +1,20 @@
 import { Injectable } from '@angular/core';
-import { Todo } from './todo';
+import { Itodo } from './itodo'
 
 @Injectable({
   providedIn: 'root'
 })
 export class TodoService {
-  [x: string]: any;
 
-  apiUrl: string = 'http://localhost3000/todo';
-  allTodo: Todo[] = [];
+  apiUrl: string = 'http://localhost4200/todo';
 
   constructor() { }
 
-  getTodo():Promise<Todo[]>{
+  getTodo():Promise<Itodo[]>{
     return fetch(this.apiUrl).then(response => response.json());
   }
 
-  addTodo(todo:Todo){
+  addTodo(todo:Itodo){
     return fetch(this.apiUrl,{
       method:'post',
       headers: {'Content-Type': 'application/json'},
@@ -24,11 +22,18 @@ export class TodoService {
     }).then(response => response.json());
   }
 
-  updateTodo(todo:Todo){
+  updateTodo(todo:Itodo){
+    todo.completed =!todo.completed;
     return fetch(this.apiUrl+'/'+todo.id,{
       method:'PUT',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(todo)
     }).then(response => response.json());
   }
+}
+
+deleteTodo(todo:Itodo){
+  return fetch(this.apiUrl+'/'+todo.id,{
+    method:'DELETE',
+  }).then(response => response.json());
 }

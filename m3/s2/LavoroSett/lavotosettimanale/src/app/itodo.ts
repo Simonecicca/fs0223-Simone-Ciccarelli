@@ -1,5 +1,13 @@
-import { TodoComponent } from "./pages/todo/todo.component";
 import { Todo } from "./todo";
 
-export class Itodo implements TodoComponent {
+export class Itodo implements Todo {
+  id?: number | undefined;
+  title: string;
+  completed: boolean;
+
+  constructor(title: string, completed: boolean, id?: number | undefined) {
+    this.id = id;
+    this.title = title;
+    this.completed = completed;
+  }
 }

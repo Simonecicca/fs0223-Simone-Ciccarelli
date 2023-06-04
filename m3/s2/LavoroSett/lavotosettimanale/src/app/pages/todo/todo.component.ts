@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from 'src/app/todo';
 import { TodoService } from 'src/app/todo.service';
+import { Itodo } from 'src/app/itodo';
 
 @Component({
   selector: 'app-todo',
@@ -9,7 +10,7 @@ import { TodoService } from 'src/app/todo.service';
 })
 export class TodoComponent implements OnInit {
   todo: Todo[] = [];
-  loading: boolean = false;
+  loading: boolean = true;
 
   constructor(private todoSvc: TodoService) {}
 
@@ -23,19 +24,21 @@ filterArrayPost:Todo[] = [];
     this.todoSvc.getTodo().then((todoRes) => {
       this.todo = todoRes;
       this.loading = false;
-      todoRes.filter(() => {
-        }).forEach((todoResFilter) => {
-          if (todoResFilter.completed == false) {
-            this.filterArrayPost.push(todoResFilter);
-          }
-        })
+      this.filterArrayPost = todoRes.filter((res) => res.completed === false);
     });
   }
 
+todo:Todo = new Todo('', false);
 
   addTodo(aggiungi:Todo) {
-    this.todoSvc.addTodo(aggiungi).then((todoRes) => {
-      todoRes.completed = !todoRes.completed;
+    this.todoSvc.addTodo(this.todo).then((todoRes) => {
+      console.log(todoRes)
+      this.getTodo();
     });
   }
+}
+
+update(todo: Todo) {
+  this.todoSvc.updateTodo(todo);
+  setTimeout(() => {this.getTodo()}, 100);
 }
