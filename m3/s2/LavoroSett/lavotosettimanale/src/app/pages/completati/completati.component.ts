@@ -9,18 +9,18 @@ import { TodoService } from 'src/app/todo.service';
   styleUrls: ['./completati.component.scss']
 })
 export class CompletatiComponent {
-  todo: Todo[] = [];
+  todo: Itodo[] = [];
   loading: boolean = true;
 
   constructor(private todoSvc: TodoService) {}
 
   ngOnInit(): void {
-    this.getTodo();
+    this.getItodo();
   }
 
-filterArrayPost:Todo[] = [];
+filterArrayPost:Itodo[] = [];
 
-  getTodo(): void {
+  getItodo(): void {
     this.todoSvc.getTodo().then((todoRes) => {
       this.todo = todoRes;
       this.loading = false;
@@ -28,24 +28,25 @@ filterArrayPost:Todo[] = [];
     });
   }
 
-todo:Todo = new Todo('', false);
+Itodo: Itodo = new Itodo('', false);
 
-  addTodo(aggiungi:Todo) {
-    this.todoSvc.addTodo(this.todo).then((todoRes) => {
+  addItodo() {
+    this.todoSvc.addTodo(this.Itodo).then((todoRes) => {
       console.log(todoRes)
-      this.getTodo();
+      this.getItodo();
     });
   }
+
+  update(todo: Todo) {
+    this.todoSvc.updateTodo(todo);
+  };
+
+
+  deleteTodo(todo: Todo) {
+    this.todoSvc.updateTodo(todo);
+    setTimeout(() => {this.getItodo()}, 100);
+
 }
-
-update(todo: Todo) {
-  this.todoSvc.updateTodo(todo);
-};
-
-deleteTodo(todo: Todo) {
-  this.todoSvc.updateTodo(todo);
-  setTimeout(() => {this.getTodo()}, 100);
-
 
 }
 

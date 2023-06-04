@@ -8,12 +8,12 @@
     </div>
 <ul>
   <li *ngFor="let todo of filterArrayPost">{{todo.title}}</li>
-  <button class="check-button" (click)="update(todo)">✓</button>
+  <button class="check-button" (click)="update(Itodo)">✓</button>
 </ul>
 
 <div class="todo-container">
 <p>Create new ToDo</p>
-<input name="input-name" [(ngModel)] = "todo.title" class="input" type="text" placeholder="New ToDo">
-<button class="button"  (click)="addTodo()">+ Add</button>
+<input (ngModel)="Itodo.title" class="input" type="text" placeholder="New ToDo">
+<button class="button"  (click)="addItodo()">+ Add</button>
 </div>
 </div>

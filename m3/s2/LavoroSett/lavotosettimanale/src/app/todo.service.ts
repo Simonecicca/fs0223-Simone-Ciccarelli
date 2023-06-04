@@ -25,15 +25,17 @@ export class TodoService {
   updateTodo(todo:Itodo){
     todo.completed =!todo.completed;
     return fetch(this.apiUrl+'/'+todo.id,{
-      method:'PUT',
+      method:'put',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(todo)
     }).then(response => response.json());
   }
+
+  deleteTodo(todo:Itodo){
+    return fetch(this.apiUrl+'/'+todo.id,{
+      method:'delete',
+    }).then(response => response.json());
+  }
 }
 
-deleteTodo(todo:Itodo){
-  return fetch(this.apiUrl+'/'+todo.id,{
-    method:'DELETE',
-  }).then(response => response.json());
-}
+
