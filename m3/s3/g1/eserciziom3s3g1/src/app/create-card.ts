@@ -5,14 +5,14 @@ export class CreateCard {
   url: string;
   albumId: number;
   id:number = 0
-  thumbnail: string;
+  thumbnailUrl: string;
 
-constructor(title: string, url: string, albumId:number, thumbnail: string, id:number = 0) {
+constructor(title: string, url: string, albumId:number, thumbnailUrl: string, id:number = 0) {
 this.title = title;
 this.url = url;
 this.albumId =  albumId;
 this.id = id;
-this.thumbnail = thumbnail
+this.thumbnailUrl = thumbnailUrl
 }
 
 }

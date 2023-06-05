@@ -3,7 +3,7 @@
     <p>Likes: {{likeArray.length}}</p>
     <div *ngFor = "let card of cardArray" class="col-3">
       <div class="card">
-        <img src="{{card.thumbnail}}" class="card-img" alt="imm-card">
+        <img src="{{card.thumbnailUrl}}" class="card-img" alt="imm-card">
         <div class="card-body">
           <h5 class="card-title">{{card.title}}</h5>
           <button type="button" class="btn btn-success me-2" (click)="push(card)">Like</button>
